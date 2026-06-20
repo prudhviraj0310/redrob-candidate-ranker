@@ -1,13 +1,13 @@
-team_name: "team_prudhvi"
+team_name: "the chosen one"
 
 primary_contact:
-  name: "Prudhvi Naik"
-  email: "prudhvi@example.com"
-  phone: "+91-XXXXXXXXXX"
+  name: "Prudhvi raj"
+  email: "prudhvinaik2005@gmail.com"
+  phone: "+91-8019642185"
 
 team_members:
-  - name: "Prudhvi Naik"
-    email: "prudhvi@example.com"
+  - name: "Prudhvi raj"
+    email: "prudhvinaik2005@gmail.com"
     role: "ML Engineer"
 
 github_repo: "https://github.com/prudhviraj0310/redrob-candidate-ranker"
