@@ -11,7 +11,7 @@ team_members:
     role: "ML Engineer"
 
 github_repo: "https://github.com/prudhviraj0310/redrob-candidate-ranker"
-sandbox_link: "https://colab.research.google.com/drive/1example"
+sandbox_link: "https://colab.research.google.com/drive/1pCO95ADXwgY_J7vPRDumiMaPORsHSQ7n?usp=sharing"
 reproduce_command: "python3 rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
 compute:
