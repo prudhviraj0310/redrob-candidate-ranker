@@ -1,7 +1,6 @@
 # Ignore candidate dataset files (too large for GitHub)
 candidates.jsonl
 candidates.jsonl.gz
-sample_candidates.json
 
 # Ignore system files
 .DS_Store
