@@ -10,7 +10,7 @@ team_members:
     email: "prudhvi@example.com"
     role: "ML Engineer"
 
-github_repo: "https://github.com/prudhviraj0310/Computer-Vision"
+github_repo: "https://github.com/prudhviraj0310/redrob-candidate-ranker"
 sandbox_link: "https://colab.research.google.com/drive/1example"
 reproduce_command: "python3 rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
