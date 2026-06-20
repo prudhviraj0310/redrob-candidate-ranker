@@ -1,0 +1,17 @@
+# Ignore candidate dataset files (too large for GitHub)
+candidates.jsonl
+candidates.jsonl.gz
+sample_candidates.json
+
+# Ignore system files
+.DS_Store
+__pycache__/
+*.pyc
+
+# Ignore docx files (txt files are already tracked and sufficient)
+*.docx
+
+# Ignore local environment / editor settings
+.vscode/
+.idea/
+.gemini/

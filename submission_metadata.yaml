@@ -1,0 +1,55 @@
+team_name: "team_prudhvi"
+
+primary_contact:
+  name: "Prudhvi Naik"
+  email: "prudhvi@example.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Prudhvi Naik"
+    email: "prudhvi@example.com"
+    role: "ML Engineer"
+
+github_repo: "https://github.com/prudhviraj0310/Computer-Vision"
+sandbox_link: "https://colab.research.google.com/drive/1example"
+reproduce_command: "python3 rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "MacBook Pro"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.14.3"
+  os: "macOS"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Gemini"
+
+ai_usage_summary: "Used Gemini for candidate data exploration, code review, structural pipeline design, and debugging. All ranking logic was engineered by the team — no LLM calls during the ranking step."
+
+methodology_summary: |
+  Rule-based ranker with 5 weighted scoring components and explicit honeypot detection.
+  (1) Role fit (35%): title tiering, career history analysis for retrieval/search/ranking
+  production experience, hidden-gem detection for candidates without exact keyword matches.
+  (2) Skills match (25%): tiered weighting across retrieval, vector DB, ML, and evaluation
+  skills, adjusted by proficiency, duration, and endorsements.
+  (3) Experience quality (15%): 5-9 year sweet spot, product-company career trajectory,
+  ML role duration ratio.
+  (4) Location (10%): Pune/Noida preferred, Tier-1 Indian cities acceptable.
+  (5) Behavioral signals (15%): recency, open-to-work, recruiter response rate, notice
+  period, interview completion, GitHub activity, recruiter saves.
+  Hard filters: honeypot detection via career-date impossibilities and impossible skill
+  claims; consulting-only career filter. Soft penalties for title-chasers (<18mo avg
+  tenure), CV/speech/robotics-only backgrounds, and pure research careers.
+  Reasoning is generated per-candidate referencing specific profile facts and JD requirements,
+  with honest concerns noted. Runtime: ~20 seconds for 100K candidates on CPU.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
